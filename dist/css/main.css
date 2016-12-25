@@ -1,0 +1,35 @@
+html, body {
+	height: 100%;
+	/*font-size: 13px;*/
+}
+.root, .viewspace {
+	height: 100%;
+}
+.viewspace {
+	display: flex;
+	
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.viewspace .contents {
+	height: 100%;
+
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex-grow: 1;
+
+	overflow: auto;
+}
+.react-progress-bar.progressList,
+.react-progress-bar.progressDetails {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: auto;
+	width: 300px;
+}
+.react-progress-bar.progressDetails {
+	width: auto;
+	left: 300px;
+}

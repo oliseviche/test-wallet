@@ -1,0 +1,93 @@
+.workspace {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	height: 100%;
+
+	border-left: solid 1px #ccc;
+}
+.workspace ul.nav.nav-pills {
+	flex-grow: 0;
+	flex-shrink: 0;
+
+	padding: 7px 10px;
+
+	background-color: #f5f5f8;
+	box-shadow: inset 0 -1px 0 0 #ccc;
+}
+.workspace section.panels {
+	flex-grow: 1;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+.workspace section.panels .user-details {
+	padding: 0 5%;
+}
+.workspace section.panels .user-details .btn.btn-success {
+	float: right;
+	margin: 15px;
+}
+.workspace section.panels .user-details .well {
+	background-color: #f9f9f9
+}
+.workspace section.panels .user-details .well label {
+	color:#bbb6b0;
+	font-weight: normal;
+	display: block;
+	text-decoration: underline;
+	text-transform: uppercase;
+	margin: 0;
+}
+.workspace section.panels .user-details .well p {
+	color: #83888b;
+	font-weight: bold;
+	margin-right: 80px;
+}
+.workspace section.panels .user-details .well p.negative {
+	color: #e9602c;
+}
+.workspace section.panels .user-details .well p.positive {
+	color: #57b68e;
+}
+.workspace section.panels .user-details .well p:empty:after {
+	content: '-'
+}
+.workspace section.panels .operations-content {
+	padding: 0 10px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex-grow: 1;
+}
+.workspace section.panels .operations-content .filter-popup {
+	padding: 10px 0 10px 0;
+	box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+	flex-grow: 0;
+	position: relative;
+}
+.workspace section.panels .operations-content .filter-popup label {
+	color: #83888b;
+	margin-right: 5px;
+}
+.workspace section.panels .operations-content .filter-popup label:nth-child(n+2) {
+	margin-left: 10px;
+}
+.workspace section.panels .operations-content .table-scroller {
+	flex-grow: 1;
+	overflow: auto;
+	height: 100%;
+}
+.workspace section.panels .operations-content table {
+	margin-top: 10px;
+}
+.workspace section.panels .operations-content table thead th {
+	color: #6e6e6e;
+	border: solid 1px #ddd;
+	background-color: #f5f5f8;
+	vertical-align: middle;
+}
+.workspace section.panels .operations-content table tbody th {
+	color: #83888b;
+}

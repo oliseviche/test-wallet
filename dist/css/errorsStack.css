@@ -1,0 +1,46 @@
+div.errors-stack {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+div.errors-stack div.error-island {
+	padding: 0 0 0 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	width: 370px;
+	height: 35px;
+	line-height: 35px;
+}
+div.errors-stack div.error-island .close {
+	float: left;
+	color: #fff;
+	opacity: 0.8;
+	font-size: 11px;
+	line-height: 35px;
+	margin-right: 10px;
+}
+div.errors-stack div.error-island .close:hover {
+	opacity: 1;
+}
+div.errors-stack div.error-island  .error-message {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 288px;
+	white-space: nowrap;
+}
+div.errors-stack div.error-island .report {
+	background-color: #337ab7;
+	line-height: 35px;
+	position: absolute;
+	padding: 0 10px 0 10px;
+	font-size: 11px;
+	color: #fff;
+	text-decoration: transform;
+	transition: background 0.3s linear;
+}
+div.errors-stack div.error-island .report:hover {
+	background-color: #84c0f7;
+
+}

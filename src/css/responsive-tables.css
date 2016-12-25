@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1500px) {
+	#no-more-tables table td:nth-child(3), 
+	#no-more-tables table th:nth-child(3) {display: none;}
+}
+
+@media only screen and (max-width: 1260px) {
+	#no-more-tables table td:nth-child(2), 
+	#no-more-tables table th:nth-child(2) {display: none;}
+	#no-more-tables table td:nth-child(3), 
+	#no-more-tables table th:nth-child(3) {display: none;}
+	#no-more-tables table td:nth-child(7), 
+	#no-more-tables table th:nth-child(7) {display: none;}
+}
+@media only screen and (max-width: 950px) {
+	#no-more-tables table td:nth-child(2), 
+	#no-more-tables table th:nth-child(2) {display: none;}
+	#no-more-tables table td:nth-child(3), 
+	#no-more-tables table th:nth-child(3) {display: none;}
+	#no-more-tables table td:nth-child(4), 
+	#no-more-tables table th:nth-child(4) {display: none;}
+	#no-more-tables table td:nth-child(5), 
+	#no-more-tables table th:nth-child(5) {display: none;}
+	#no-more-tables table td:nth-child(7), 
+	#no-more-tables table th:nth-child(7) {display: none;}
+}
+@media only screen and (max-width: 800px) {
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block!important;
+	}
+ 
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	#no-more-tables tbody td,
+	#no-more-tables tbody th { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+    	empty-cells: show;
+	}
+
+	#no-more-tables tbody td span:empty:before,
+	#no-more-tables tbody th span:empty:before {
+		content: '-';
+	}
+ 
+	#no-more-tables tbody td:before,
+	#no-more-tables tbody th:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	#no-more-tables tbody td:before,
+	#no-more-tables tbody th:before { 
+		content: attr(data-title); 
+	}
+}

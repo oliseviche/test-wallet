@@ -1,0 +1,45 @@
+.users-list {
+	height: 100%;
+	overflow: auto;
+	position: relative;
+}
+.users-list ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #fff;
+	font-size: 13px;
+}
+.users-list.users-list-new {
+	height: 0px;
+	overflow: hidden;
+	transition: height 300ms linear;
+}
+.users-list.users-list-new ul {
+	height: 159px;
+	overflow: hidden;
+}
+.users-list.users-list-new.e1 {
+	height: 78px;
+}
+.users-list.users-list-new.e2 {
+	height: 131px;
+}
+.users-list.users-list-new.e3 {
+	height: 184px;
+}
+.users-list.users-list-new .head-panel {
+	background-color: #ebebeb;
+	box-shadow: inset 0 1px 0 0 #e3e3e3;
+	padding: 3px 3px 3px 10px;
+	font-size: 13px;
+    font-weight: bold;
+	line-height: 1.5;
+    color: #83888b;
+	text-transform: uppercase;
+}
+.users-list.users-list-new .head-panel span.close {
+	float: right;
+	line-height: 1.5;
+	font-size: 14px;
+}

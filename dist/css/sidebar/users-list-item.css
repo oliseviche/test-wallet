@@ -1,0 +1,65 @@
+.user-item {
+	height: 53px;
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+	border-left: solid 5px transparent;
+}
+.user-item:hover {
+	background: rgba(0, 0, 0, .03);
+	border-left: solid 5px rgba(141, 128, 183, 0.5);
+}
+.user-item.selected {
+	border-left: solid 5px #8d7bb7;
+}
+.user-item .user-item__logo {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-image: url('/img/islands-50.png');
+	transform: scale(0.7);
+	border: solid 1px rgba(0, 0, 0, .25);
+	border-radius: 30px;
+	flex-shrink: 0;
+}
+.user-item .user-item__status {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #e9602c;
+	border-radius: 5px;
+	margin-right: 7px;
+	flex-shrink: 0;
+}
+.user-item .user-item__status.user-item__status--enabled {
+	background-color: #86ba82;
+}
+.user-item .user-item__info {
+	flex-grow: 1;
+	overflow: hidden;
+}
+.user-item .user-item__name,
+.user-item .user-item__email {
+	line-height: 20px;
+	white-space: nowrap;
+	color:rgb(47, 51, 63);
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+.user-item .user-item__name label,
+.user-item .user-item__email label {
+	color: rgba(0, 0, 0, .5);
+	margin-right: 5px;
+	font-weight: bold;
+}
+.user-item .user-item__name {
+	font-weight: bold;
+}
+.user-item .user-item__name span {
+	font-weight: normal;
+}

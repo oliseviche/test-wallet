@@ -1,0 +1,13 @@
+.headbar {
+	padding: 5px;
+	background-color: #8d7bb7;
+	flex-grow: 0;
+}
+.headbar h4 {
+	display: inline;
+	font-weight: bold;
+	color: #fff;
+	font-size: 25px;
+    vertical-align: middle;
+    margin: 0 10px;
+}

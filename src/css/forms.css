@@ -1,0 +1,7 @@
+form .form-group label span {
+	vertical-align: middle
+}
+form .form-group label span.label {
+	vertical-align: 1px;
+	margin-left: 5px;
+}

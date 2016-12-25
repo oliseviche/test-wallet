@@ -1,0 +1,13 @@
+// Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию и пользовательские параметры.
+{
+	// Управляет размером шрифта в пикселях.
+	"editor.fontSize": 16,
+	// Вставлять пробелы при нажатии клавиши TAB. Эта настройка переопределяется на основании содержимого файла, когда включен параметр "editor.detectIndentation".
+	"editor.insertSpaces": false,
+	// Вставка и удаление пробелов после позиции табуляции
+	"editor.useTabStops": false,
+	// Maximum amount of characters per line (0 = disable).
+	"html.format.wrapLineLength": 0,
+	// Indent <head> and <body> sections.
+	"html.format.indentInnerHtml": true,
+}
