@@ -8,4 +8,4 @@ After cloning repository, run _npm install_ for downloading dependencies.
 **_gulp_**: Build project and start webserver on port 8001.  
 **_gulp build_**: Just build it, Bro!  
 
-**For demo, see: [DEMO: https://oliseviche.github.io/test-wallet/dist/index.html#](DEMO: https://oliseviche.github.io/test-wallet/dist/index.html#)**
+**For demo, see: [https://oliseviche.github.io/test-wallet/dist/index.html#](https://oliseviche.github.io/test-wallet/dist/index.html#)**
